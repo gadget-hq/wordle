@@ -1,0 +1,44 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Wordle"
+run/main_scene="uid://dl6twvu01avp"
+config/features=PackedStringArray("4.4", "Mobile")
+config/icon="uid://cty6kpu534ayj"
+
+[autoload]
+
+ImGuiRoot="*res://addons/imgui-godot/data/ImGuiRoot.tscn"
+Loggie="*res://addons/loggie/loggie.gd"
+GameState="*res://game_state.gd"
+
+[display]
+
+window/size/viewport_width=540
+window/size/viewport_height=1080
+window/handheld/orientation=1
+window/main_scene="uid://uemx4bxtv6s2"
+window/icon="uid://cty6kpu534ayj"
+window/name="Wordle"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/imgui-godot/plugin.cfg", "res://addons/loggie/plugin.cfg", "res://addons/script-ide/plugin.cfg")
+
+[gui]
+
+theme/custom="uid://dhlfkrkyvh3ey"
+theme/custom_font="uid://dxojtw4r4joan"
+
+[rendering]
+
+renderer/rendering_method="mobile"

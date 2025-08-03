@@ -1,0 +1,50 @@
+[gd_scene load_steps=5 format=3 uid="uid://dl6twvu01avp"]
+
+[ext_resource type="Theme" uid="uid://dhlfkrkyvh3ey" path="res://main.tres" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://dc6jx1w1nlw2t" path="res://root.gd" id="2_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://c4y0fb8iqsvvh" path="res://tile_row.tscn" id="2_h2yge"]
+[ext_resource type="Texture2D" uid="uid://bsxpovev13tg7" path="res://wordle.png" id="3_1bvp3"]
+
+[node name="Root" type="Panel" node_paths=PackedStringArray("tile_rows")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_ig7tw")
+theme_type_variation = &"BG"
+script = ExtResource("2_1bvp3")
+tile_rows = [NodePath("CenterContainer/TileRows/TileRow_0"), NodePath("CenterContainer/TileRows/TileRow_1"), NodePath("CenterContainer/TileRows/TileRow_2"), NodePath("CenterContainer/TileRows/TileRow_3"), NodePath("CenterContainer/TileRows/TileRow_4"), NodePath("CenterContainer/TileRows/TileRow_5")]
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TileRows" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="TileRow_0" parent="CenterContainer/TileRows" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+
+[node name="TileRow_1" parent="CenterContainer/TileRows" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+
+[node name="TileRow_2" parent="CenterContainer/TileRows" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+
+[node name="TileRow_3" parent="CenterContainer/TileRows" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+
+[node name="TileRow_4" parent="CenterContainer/TileRows" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+
+[node name="TileRow_5" parent="CenterContainer/TileRows" instance=ExtResource("2_h2yge")]
+layout_mode = 2
+
+[node name="Wordle" type="Sprite2D" parent="."]
+position = Vector2(864, 463)
+texture = ExtResource("3_1bvp3")

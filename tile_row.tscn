@@ -1,0 +1,114 @@
+[gd_scene load_steps=3 format=3 uid="uid://c4y0fb8iqsvvh"]
+
+[ext_resource type="Script" uid="uid://bn34lptahto71" path="res://tile_row.gd" id="1_rojm1"]
+[ext_resource type="Script" uid="uid://bahawnsyqvcsi" path="res://tile.gd" id="2_7tw35"]
+
+[node name="TileRow" type="GridContainer" node_paths=PackedStringArray("tiles")]
+columns = 5
+script = ExtResource("1_rojm1")
+tiles = [NodePath("Tile_0"), NodePath("Tile_1"), NodePath("Tile_2"), NodePath("Tile_3"), NodePath("Tile_4")]
+
+[node name="Tile_0" type="Panel" parent="." node_paths=PackedStringArray("label")]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_type_variation = &"Tile"
+script = ExtResource("2_7tw35")
+label = NodePath("Letter")
+
+[node name="Letter" type="Label" parent="Tile_0"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_type_variation = &"TileLetter"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Tile_1" type="Panel" parent="." node_paths=PackedStringArray("label")]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_type_variation = &"Tile"
+script = ExtResource("2_7tw35")
+label = NodePath("Letter")
+
+[node name="Letter" type="Label" parent="Tile_1"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_type_variation = &"TileLetter"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Tile_2" type="Panel" parent="." node_paths=PackedStringArray("label")]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_type_variation = &"Tile"
+script = ExtResource("2_7tw35")
+label = NodePath("Letter")
+
+[node name="Letter" type="Label" parent="Tile_2"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_type_variation = &"TileLetter"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Tile_3" type="Panel" parent="." node_paths=PackedStringArray("label")]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_type_variation = &"Tile"
+script = ExtResource("2_7tw35")
+label = NodePath("Letter")
+
+[node name="Letter" type="Label" parent="Tile_3"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_type_variation = &"TileLetter"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Tile_4" type="Panel" parent="." node_paths=PackedStringArray("label")]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_type_variation = &"Tile"
+script = ExtResource("2_7tw35")
+label = NodePath("Letter")
+
+[node name="Letter" type="Label" parent="Tile_4"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_type_variation = &"TileLetter"
+horizontal_alignment = 1
+vertical_alignment = 1
